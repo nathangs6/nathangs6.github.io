@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>
+        Fire
+    </title>
+
+    <!-- Setup Meta Data -->
+    <meta charset="utf-8">
+    <meta name="description" content="This is fire.">
+    <meta name="author" content="Nathan Gurrin-Smith">
+    <meta name="keywords" content="Nathan,Gurrin,Smith,Gurrin-Smith,Fire">
+
+    <!-- Include stylesheets -->
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+</head>
+
+<body>
+
+    <!-- Include the universal header -->
+    <header class="global_header">
+        <h1 id="main_header">
+            Nathan Gurrin-Smith
+        </h1>
+        <nav id="main_navigation">
+            <ul>
+                <li><a href="/nathangs/index.html">Homepage</a></li>
+                <li><a href="/nathangs/courses.html">Courses</a></li>
+                <li><a href="/nathangs/certificates.html">Certificates</a></li>
+            </ul>
+        </nav>
+        <hr id="header_separation">
+    </header>
+
+    <main>
+
+        <h1>
+            Wildfire Propagation Modeling
+        </h1>
+        <p>
+            Accompanying page to my wildfire propagation modeling presentation for MAT477.
+				</p>
+				<p>
+					You can find some brief notes <a href="fire_resources/fire_notes.pdf">here</a>.
+				</p>
+
+				<h2>Huygen's Principle and Fire Modeling</h2>
+
+				<p>
+					First, here is a visualization of a wave propagating from a point source.
+				</p>
+				<img src="fire_resources/wave_visualization.gif"></img>
+
+				<p>
+					Here is a gif for getting some intuition for how Huygen's Principle works in 2D. The z-axis is the time axis. The larger cone is the propagation from a point source at the origin, and the smaller cone is the propagation from a point source on the wavefront of the larger cone after 2 seconds. Notice that both of these situations have the same outer wavefront.
+				</p>
+				<img src="fire_resources/huygen_visualization.gif"></img>
+				<p>
+					For another visualization, we can look at what this looks like in 2D. The blue ellipse is the wavefront propagated for 1 second at a speed of 1 m/s from a point source at the origin. The green ellipses are wavefronts propagated for 1/2 second at a speed of 1 m/s from a point source on the blue wavefront. The red ellipse is the wavefront propagated after 3/2 seconds from the point source at the origin.
+				</p>
+				<img src="fire_resources/huygen_visualization_flat.png"></img>
+				<p>
+					The main idea in Anderson (1982) is that we can apply Huygen's Principle to fire spread. In the below gif, the blue line is the fireline after 4 seconds with a constant wind blowing in the positive x direction. Then, the wind switches and we apply Huygen's Principle, which generate the green ellipses at each point. The red ellipse is the final fireline after 4.5 seconds total.
+				</p>
+				<img src="fire_resources/huygen_fire.gif"></img>
+
+				<h2>
+					References
+				</h2>
+				<p>
+					Anderson, D. H., Catchpole, E. A., De Mestre, N. J., & Parkes, T. (1982). Modelling the spread of grass fires. Journal of the Australian Mathematical Society. Series B, Applied Mathematics, 23(4), 451–466. <a href="https://doi.org/10.1017/S0334270000000394">https://doi.org/10.1017/S0334270000000394</a>
+				</p>
+				<p>
+					Ciarochi, J. (2020). The history of wildfire modeling. Triplebyte.com. Retrieved 30 September 2021, from <a href="https://triplebyte.com/blog/the-history-of-wildfire-modeling">https://triplebyte.com/blog/the-history-of-wildfire-modeling</a>.
+				</p>
+				<p>
+					Finney, Mark A. 1998. FARSITE: Fire Area Simulator - model development and evaluation. Research Paper RMRS-RP-4. Ogden, UT: USDA Forest Service, Rocky Mountain Research Station. 47 p.
+				</p>
+				<p>
+					Frandsen, W. H. (1971). Fire spread through porous fuels from the conservation of energy. Combustion and Flame, 16(1), 9–16. <a href="https://doi.org/10.1016/S0010-2180(71)80005-6">https://doi.org/10.1016/S0010-2180(71)80005-6</a>
+				</p>
+				<p>
+					Mandel, J., Beezley, J. D., & Kochanski, A. K. (2011). Coupled atmosphere-wildland fire modeling with WRF 3.3 and SFIRE 2011. Geoscientific Model Development, 4(3), 591–610. <a href="https://doi.org/10.5194/gmd-4-591-2011">https://doi.org/10.5194/gmd-4-591-2011</a>
+				</p>
+				<p>
+					Rothermel, R. C. (1972). A mathematical model for predicting fire spread in wildland fuels. Intermountain Forest and Range Experiment Station, Forest Service, United States Department of Agriculture.
+				</p>
+    </main>
+
+    <!-- Include the universal footer -->
+    <footer id="global_footer">
+      <hr id="footer_separation">
+      <ul>
+        <li>Find me: </li>
+        <li><a href="https://github.com/nathangs6"><img src="/nathangs/images/github_logo.png" class="networking_image"></img></a></li>
+        <li><a href="https://www.linkedin.com/in/nathan-gurrin-smith/"><img src="/nathangs/images/linkedin_logo.png" class="networking_image"></img></a></li>
+      </ul>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+/* Format the header */
+#main_header, #main_navigation ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header separation bar */
+#header_separation {
+  display: block;
+  border-top: 1px solid HSL(218, 27%, 78%);
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* Make the navigation list horizontal and boxed */
+#main_navigation ul li {
+  display: inline-block;
+  list-style-type: none;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+/* Makes the whole link boxes clickable */
+#main_navigation a {
+  display: inline-block;
+  margin: 0 auto;
+  padding:10px 10px;
+}
+
+
+/* Format the Footer */
+#global_footer {
+  text-align: center;
+  font-size: 12px;
+  color: #6A7895;
+}
+
+#global_footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+#global_footer ul li {
+  display: inline;
+  list-style-type: none;
+}
+
+/* Make sure the networking icon images are the right size and alignment */
+.networking_image {
+	vertical-align: middle;
+  height: 24px;
+  width: 24px;
+}
+
+/* Footer separation bar */
+#footer_separation {
+  display: block;
+  border: 0;
+  background-color: HSL(220, 16%, 15%);
+  height: 1px;
+  margin: 2em 20% 1em 20%;
+  padding: 0;
+}
+
+
+/* Styling for Every Page */
+body {
+  margin: 20px 20%;
+  padding: 20px;
+  background-color: #2e3440;
+  color: HSL(218, 27%, 78%);
+  font-family: "Noto Sans", sans-serif;
+  border-radius: 50px;
+}
+
+html {
+  background-color: HSL(220, 16%, 15%);
+}
+
+a {
+  color: #a3be8c;
+}

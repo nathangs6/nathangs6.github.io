@@ -33,7 +33,7 @@ p {
 }
 
 .horizontal-list li:after {
-  content:'\2022';
+  content: '\\\\';
   margin:0 10px;
 }
 

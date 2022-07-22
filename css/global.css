@@ -12,10 +12,9 @@
 }
 
 
-/* Collapsible styling */
-.collapsible-content {
-  display: none;
-  overflow: hidden;
+/* Change margins of elements */
+ul {
+  margin-top: 3px;
 }
 
 

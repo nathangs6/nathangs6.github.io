@@ -79,6 +79,7 @@ table.side-data td:nth-of-type(2) {
 .divided-table {
   border: 1px solid black;
   border-collapse: collapse;
+  text-align: center;
 }
 .divided-table tr {
   border: 1px solid black;
@@ -93,7 +94,8 @@ table.side-data td:nth-of-type(2) {
   border-collapse: collapse;
 }
 td {
-  vertical-align: top;
+  vertical-align: middle;
+  padding: 0.25em;
 }
 
 /* General Text Styling */

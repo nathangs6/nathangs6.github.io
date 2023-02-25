@@ -13,6 +13,10 @@ function getVar(variable) {
 function loadPage() {
 	var data = getVar("title");
 	data = data.replaceAll('_',' ');
-	document.getElementById("title").innerHTML = data;
+	var vars = document.getElementsByClassName("to-replace")
+	for (var i=0;i<vars.length;i++) {
+		vars[i].innerHTML = data;
+	}
+	// document.getElementById("title").innerHTML = data;
 	document.title = data;
 }

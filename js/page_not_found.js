@@ -1,7 +1,7 @@
 function loadPageNotFound() {
 	var data = getVar("title");
-	document.getElementById("day-link").href = "page_not_found.html?title=" + data + "&theme=day";
-	document.getElementById("night-link").href = "page_not_found.html?title=" + data + "&theme=night";
+	document.getElementById("classic-link").href = "page_not_found.html?title=" + data + "&theme=classic";
+	document.getElementById("future-link").href = "page_not_found.html?title=" + data + "&theme=future";
 	document.getElementById("terminal-link").href = "page_not_found.html?title=" + data + "&theme=terminal";
 
 	data = data.replaceAll('_',' ');

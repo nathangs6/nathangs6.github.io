@@ -33,15 +33,15 @@ function addVarToLink(link, varName, varValue) {
 function loadTheme() {
     var theme = getVar("theme");
     var cssInputLoc = document.getElementById("theme");
-    if (theme === "day") {
-        cssInputLoc.href="css/day.css";
-    } else if (theme === "night") {
-        cssInputLoc.href="css/night.css";
+    if (theme === "classic") {
+        cssInputLoc.href="css/classic.css";
+    } else if (theme === "future") {
+        cssInputLoc.href="css/future.css";
     } else if (theme === "terminal") {
         cssInputLoc.href="css/terminal.css";
     } else {
-        cssInputLoc.href="css/day.css";
-        location.replace(addVarToLink(location.href, "theme", "day"))
+        cssInputLoc.href="css/classic.css";
+        location.replace(addVarToLink(location.href, "theme", "classic"))
     }
 }
 

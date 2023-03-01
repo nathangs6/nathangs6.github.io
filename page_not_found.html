@@ -10,23 +10,32 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<!-- Include stylesheets -->
 		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<link id="theme" rel="stylesheet" type="text/css" href="">
+		<script src="js/funcs.js"></script>
         <script src="js/page_not_found.js"></script>
 	</head>
 	<body>
+		<script>
+			loadTheme();
+		</script>
 		<header>
 			<h1 class="article-header heading to-replace"></h1>
+			<hr class="separator">
+			<p style="float:right;">Theme: <a id="day-link" href="">Day</a> <a id="night-link" href="">Night</a> <a id="terminal-link" href="">Terminal</a></p>
+			<p><a class="internal-link" href="index.html">Home</a></p>
 			<hr class="separator">
 		</header>
 
 		<main>
-			<p>The page "<a href="#" class="not-found"><span class="to-replace"></span></a>" does not exist. You cannot create a draft and submit it for review because only I have permission to do that. You could try to search Wikipedia for it, or you could try your luck at making a new Wikipedia page! <a href="index.html">Click here to go back</a>.</p>
-            <script>
-                loadPage();
-            </script>
+			<p>The page "<a href="" class="not-found"><span class="to-replace"></span></a>" does not exist. You cannot create a draft and submit it for review because only I have permission to do that. You could try to search Wikipedia for it, or you could try your luck at making a new Wikipedia page! <a class="internal-link" href="index.html">Click here to go back</a>.</p>
 		</main>
 		<footer>
 			<hr class="separator">
-			<a href="index.html">Home</a>
+			<a class="internal-link" href="index.html">Home</a>
 		</footer>
+		<script>
+			loadPageNotFound();
+			updateInternalLinks();
+		</script>
 	</body>
 </html>

@@ -1,0 +1,64 @@
+/* Colour file for terminal mode */
+/* Fonts */
+
+/* Colours:
+Background: black
+Text: grey
+Borders: grey
+Known links: greenyellow
+Page not found links: #996515
+Container background: black
+Container borders: grey
+*/
+
+a {
+    color: greenyellow;
+}
+
+.not-found {
+    color: #996515;
+}
+
+.link-button {
+    color: greenyellow;
+}
+
+.container-background {
+    background-color: black;
+}
+
+.container-border {
+    border: 1px solid grey;
+}
+
+.divided-table {
+    border: 1px solid grey;
+}
+
+.divided-table tr {
+    border: 1px solid grey;
+}
+
+.divided-table th {
+    border: 1px solid grey;
+}
+
+.divided-table td {
+    border: 1px solid grey;
+}
+
+.separator {
+    color: #495670;
+    background-color: #495670;
+}
+
+.on-page {
+    color: grey;
+}
+
+html {
+    background-color: black;
+    color: grey;
+    font-family: monospace;
+    font-size: large;
+}

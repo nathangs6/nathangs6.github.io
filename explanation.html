@@ -10,13 +10,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<!-- Include stylesheets -->
 		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<link id="theme" rel="stylesheet" type="text/css" href="">
 		<script src="js/funcs.js"></script>
 	</head>
 	<body>
+		<script>
+			loadTheme();
+		</script>
 		<header>
 			<h1 class="heading">Explanation</h1>
 			<hr class="separator">
-			<p><a href="index.html">Article</a> <a href="explanation.html" style="color: black;">Explanation</a></p>
+			<p style="float:right;">Theme: <a href="explanation.html?theme=day">Day</a> <a href="explanation.html?theme=night">Night</a> <a href="explanation.html?theme=terminal">Terminal</a></p>
+			<p><a class="internal-link" href="index.html">Article</a> <a class="on-page internal-link" href="explanation.html">Explanation</a></p>
 			<hr class="separator">
 		</header>
 
@@ -41,12 +46,15 @@
                 Overall, it was fun to dig through and relive some of my memories, and create a (in my opinion) cool presentation of them. I hope you enjoyed the journey as well :)
             </p>
             <p style="text-align: right;">
-                &#8212; Nathan Gurrin-Smith
+                &#8212; <a class="internal-link" href="index.html">Nathan Gurrin-Smith</a>
             </p>
 		</main>
 		<footer>
 			<hr class="separator">
-			<a href="index.html">Home</a>
+			<a class="internal-link" href="index.html">Home</a>
 		</footer>
+		<script>
+			updateInternalLinks();
+		</script>
 	</body>
 </html>

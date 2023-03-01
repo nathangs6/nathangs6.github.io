@@ -10,18 +10,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<!-- Include stylesheets -->
 		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<link id="theme" rel="stylesheet" type="text/css" href="">
 		<script src="js/funcs.js"></script>
 	</head>
 	<body>
+		<script>
+			loadTheme();
+		</script>
 		<header>
 			<h1 class="heading">Nathan Gurrin-Smith</h1>
 			<hr class="separator">
-			<p><a href="index.html" style="color: black;">Article</a> <a href="explanation.html">Explanation</a></p>
+			<p style="float:right;">Theme: <a href="index.html?theme=day">Day</a> <a href="index.html?theme=night">Night</a> <a href="index.html?theme=terminal">Terminal</a></p>
+			<p><a href="index.html" class="on-page internal-link">Article</a> <a class="internal-link" href="explanation.html">Explanation</a></p>
 			<hr class="separator">
 		</header>
 
 		<main>
-			<div class="side-info">
+			<div class="side-info container-background container-border">
 				<p style="text-align: center;">Nathan Gurrin-Smith</p>
 				<p style="text-align: center;"><a href="https://en.wikipedia.org/wiki/Bachelor_of_Science">BSc</a></p>
 				<p><img src="stokes2.png" style="width:90%;margin-left:5%;"></p>
@@ -46,8 +51,8 @@
 					</tr>
 					<tr>
 						<td><b>Associations</b></td>
-						<td><a href="page_not_found.html?title=Cousins_from_Iceland_Society">Cousins from Iceland Society</a><br>
-							<a href="page_not_found.html?title=The_Fellowship_of_Golf_Balls">The Fellowship of Golf Balls</a></td>
+						<td><a class="not-found internal-link" href="page_not_found.html?title=Cousins_from_Iceland_Society">Cousins from Iceland Society</a><br>
+							<a class="not-found internal-link" href="page_not_found.html?title=The_Fellowship_of_Golf_Balls">The Fellowship of Golf Balls</a></td>
 					</tr>
 					<tr>
 						<td><b>Links</b></td>
@@ -60,10 +65,10 @@
 					</tr>
 				</table>
 			</div>
-			<p class="quote">"Chef, mosquito lover, cooked cherry tomato enthusiast.<br>Those are words that don't describe who I am."</p>
+			<p class="quote container-background container-border">"Chef, mosquito lover, cooked cherry tomato enthusiast.<br>Those are words that don't describe who I am."</p>
 			<p><strong>Nathan "Amoeba" Gurrin-Smith</strong> <a href="https://en.wikipedia.org/wiki/Bachelor_of_Science">BSc</a> (ne&#618;&theta;&#601;n "&#652;mob&#652;" g&#604;r&#618;n-sm&#618;&theta; , born <a href="https://en.wikipedia.org/wiki/1999">1999</a>) is an ordinary <a href="https://en.wikipedia.org/wiki/Canadians">Canadian</a> person who is not known for anything.</p>
 
-			<div class="nav-div">
+			<div class="nav-div container-background container-border">
 				<h6 style="margin: 0; text-align: center; font-size: small;">Contents [<input class="link-button" id="nav-div-button" type="button" value="hide" onclick='collapse("nav-div","nav-div-button", "hide", "show")'>]</h6>
 				<div id="nav-div" style="display:block;">
 				<ol style="margin:0.4em;margin-left:0;">
@@ -87,21 +92,21 @@
 			<h2 id="biography" class="heading">Biography <input class="link-button" id="biography-button" type="button" value="&#9650;" style="font-size: 1rem" onclick='collapse("biography-wrapper","biography-button", "&#9650;", "&#9660;")'></h2>
 			<hr class="separator" />
 			<div id="biography-wrapper" style="display:block;">
-				<p>Nathan Peter Michael Gurrin-Smith was born on <a href="https://en.wikipedia.org/wiki/25_(number)">25</a> <a href="https://en.wikipedia.org/wiki/April">April</a> 1999 in Toronto, Ontario to <a href="page_not_found.html?title=Brian_Smith" class="not-found">Brian Smith</a> and <a href="page_not_found.html?title=Susan_Gurrin" class="not-found">Susan Gurrin</a>. They had stayed in Toronto for most of their lives when they decided to stay in Toronto after maintaining their jobs. Gurrin-Smith has no siblings.</p>
+				<p>Nathan Peter Michael Gurrin-Smith was born on <a href="https://en.wikipedia.org/wiki/25_(number)">25</a> <a href="https://en.wikipedia.org/wiki/April">April</a> 1999 in Toronto, Ontario to <a href="page_not_found.html?title=Brian_Smith" class="not-found internal-link">Brian Smith</a> and <a class="internal-link not-found" href="page_not_found.html?title=Susan_Gurrin">Susan Gurrin</a>. They had stayed in Toronto for most of their lives when they decided to stay in Toronto after maintaining their jobs. Gurrin-Smith has no siblings.</p>
 				<p>As a child, Gurrin-Smith was diagnosed with <a href="https://en.wikipedia.org/wiki/Hyperimmunoglobulin_E_syndrome">Hyper IGE</a> which had an impact on which activities he participated in. Due to this, he ended up having <a href="https://en.wikipedia.org/wiki/Pneumonia">pneumonia</a> thirteen times and <a href="https://en.wikipedia.org/wiki/Cellulitis">cellulitis</a> nine times<sup>[<a href="source-fake-interview">tbd</a>]</sup>.
 				</p>
 				<p>
-					In November 1999 he started <a href="https://en.wikipedia.org/wiki/Child_care"></a>day care</a> where he met his friend <a href="page_not_found.html?title=Ryan_Kia" class="not-found">Ryan Kia</a>.
+					In November 1999 he started <a href="https://en.wikipedia.org/wiki/Child_care"></a>day care</a> where he met his friend <a href="page_not_found.html?title=Ryan_Kia" class="not-found internal-link">Ryan Kia</a>.
 				</p>
 				<p>
-					When he was four, he stayed in Toronto with both his parents to attend junior <a href="https://en.wikipedia.org/wiki/Kindergarten">kindergarten</a> at <a href="page_not_found.html?title=St._Denis_Catholic_School" class="not-found">St. Denis Catholic School</a>. Despite common belief, Gurrin-Smith was not <a href="https://en.wikipedia.org/wiki/Baptism">baptized</a> and is not <a href="https://en.wikipedia.org/wiki/Catholic_Church">Catholic</a>; his motivation for attending St. Denis was purely based on the day care benefits<sup>[<a href="#source-fake-interview">tbd</a>]</sup>. While at St. Denis, he also joined <a href="https://www.teamunify.com/team/canops/page/home">TORCH swimming</a>. At the end of his tenure at St. Denis, he started to develop an interest in <a href="https://en.wikipedia.org/wiki/Long-distance_running">distance running</a> and <a href="https://en.wikipedia.org/wiki/Triathlon">triathlons</a>.
+					When he was four, he stayed in Toronto with both his parents to attend junior <a href="https://en.wikipedia.org/wiki/Kindergarten">kindergarten</a> at <a href="page_not_found.html?title=St._Denis_Catholic_School" class="not-found internal-link">St. Denis Catholic School</a>. Despite common belief, Gurrin-Smith was not <a href="https://en.wikipedia.org/wiki/Baptism">baptized</a> and is not <a href="https://en.wikipedia.org/wiki/Catholic_Church">Catholic</a>; his motivation for attending St. Denis was purely based on the day care benefits<sup>[<a href="#source-fake-interview">tbd</a>]</sup>. While at St. Denis, he also joined <a href="https://www.teamunify.com/team/canops/page/home">TORCH swimming</a>. At the end of his tenure at St. Denis, he started to develop an interest in <a href="https://en.wikipedia.org/wiki/Long-distance_running">distance running</a> and <a href="https://en.wikipedia.org/wiki/Triathlon">triathlons</a>.
 				</p>
-				<div class="figure-container figure-right" style="width:30%;">
+				<div class="figure-container figure-right container-background container-border" style="width:30%;">
 					<a href="young_nathan.jpg"><img src="young_nathan.jpg" alt="A picture of a young Nathan." class="figure-image"></a>
 					<figcaption class="figure-caption">Gurrin-Smith demonstrating his ambition at a young age.</figcaption>
 				</div>
 				<p>
-					When he was fourteen, he again stayed in Toronto with both of his parents to attend <a href="https://en.wikipedia.org/wiki/Education_in_Canada">high school</a> at <a href="https://en.wikipedia.org/wiki/Neil_McNeil_High_School">Neil McNeil Catholic High School</a>. There, he finally took on distance running as his full-time athletic venture, but still maintained his swimming form on the <a href="https://en.wikipedia.org/wiki/School">school</a> swim team. Additionally, he met his friend <a href="page_not_found.html?title=Troy_Perera" class="not-found">Troy Perera</a>.
+					When he was fourteen, he again stayed in Toronto with both of his parents to attend <a href="https://en.wikipedia.org/wiki/Education_in_Canada">high school</a> at <a href="https://en.wikipedia.org/wiki/Neil_McNeil_High_School">Neil McNeil Catholic High School</a>. There, he finally took on distance running as his full-time athletic venture, but still maintained his swimming form on the <a href="https://en.wikipedia.org/wiki/School">school</a> swim team. Additionally, he met his friend <a href="page_not_found.html?title=Troy_Perera" class="not-found internal-link">Troy Perera</a>.
 				</p>
 				<p>
 					When he was eighteen, he again stayed in Toronto, this time in the University College <a href="https://en.wikipedia.org/wiki/Daniel_Wilson_(academic)">Sir Daniel Wilson</a>'s residence, to attend university at the University of Toronto's <a href="https://kpe.utoronto.ca/">Faculty of Kinesiology and Physical Education</a>. Waylaid by a persistent <a href="https://en.wikipedia.org/wiki/Achilles_tendon">Achilles tendon</a> <a href="https://en.wikipedia.org/wiki/Repetitive_strain_injury">injury</a>, his distance running career came to a disappointing end<sup>[<a href="#source-fake-interview">tbd</a>]</sup>. While studying <a href="https://en.wikipedia.org/wiki/Kinesiology">kinesiology</a>, he developed a slight dislike for the "wet" sciences (a term he picked up from his high school science teachers<sup>[<a href="#source-fake-interview">tbd</a>]</sup>) and the following year he transferred into the <a href="https://www.artsci.utoronto.ca/">Faculty of Arts & Sciences</a> to study <a href="https://en.wikipedia.org/wiki/Mathematics">mathematics</a> and <a href="https://en.wikipedia.org/wiki/Physics">physics</a>. Towards the end of his tenure as an <a href="https://en.wikipedia.org/wiki/Undergraduate_education">undergraduate</a>, he picked up his current athletic interest, <a href="https://en.wikipedia.org/wiki/Bouldering">bouldering</a>.
@@ -109,7 +114,7 @@
 				<p>
 					Upon graduating at the age of twenty-three, he again stayed in Toronto and picked up a job selling <a href="https://en.wikipedia.org/wiki/Rock-climbing_equipment">climbing equipment</a> at <a href="https://en.wikipedia.org/wiki/Mountain_Equipment_Company">Mountain Equipment Company</a>. He is currently waiting to hear back from the numerous <a href="https://en.wikipedia.org/wiki/Postgraduate_education">graduate</a> programs he applied to<sup>[<a href="#source-fake-interview">tbd</a>]</sup>.
 				</p>
-				<div class="figure-container figure-center" style="width:90%;">
+				<div class="figure-container figure-center  container-background container-border" style="width:90%;">
 					<a href="family_tree.png"><img src="family_tree.png" alt="Nathan's family tree." class="figure-image"></a>
 					<figcaption class="figure-caption">Gurrin-Smith's family tree.</figcaption>
 				</div>
@@ -125,7 +130,7 @@
 					Gurrin-Smith first began his formal <a href="https://en.wikipedia.org/wiki/Education">education</a> in <a href="https://en.wikipedia.org/wiki/Primary_education">basic knowledge</a> at St. Denis Catholic School in their junior kindergarten program in the year <a href="https://en.wikipedia.org/wiki/2003">2003</a>. While there, he showed an average proficiency in basic math, <a href="https://en.wikipedia.org/wiki/English_language">English</a>, and other <a href="https://en.wikipedia.org/wiki/Course_(education)">subjects</a>. In <a href="https://en.wikipedia.org/wiki/2005">2005</a>, he <a href="https://en.wikipedia.org/wiki/Graduation">graduated</a> from St. Denis's kindergarten program, granted by the <a href="https://en.wikipedia.org/wiki/George_Brown_College">George Brown College of Applied Arts and Technology</a><sup>[<a href="#source-fake-interview">tbd</a>]</sup>, and was granted enrollment in their elementary school program. After a fairly uninspiring first half performance, he started putting out more and more impressive results and was granted the Academic Excellence award when he graduated in 2013<sup>[<a href="#source-fake-interview">tbd</a>]</sup>.
 				</p>
 				<h3 class="heading" id="high-school">Neil McNeil High School (2013-2017)</h3>
-				<div class="figure-container figure-right" style="width:25%;">
+				<div class="figure-container figure-right container-background container-border" style="width:25%;">
 					<a href="nathan_hs.png"><img src="nathan_hs.png" alt="A picture of a high school Nathan." class="figure-image"></a>
 					<figcaption class="figure-caption">Gurrin-Smith in high school.</figcaption>
 				</div>
@@ -577,7 +582,7 @@
 						<tr>
 							<td>MAT344H1</td>
 							<td>Intro Combinatorics</td>
-							<td><a href="page_not_found.html?title=Kostiantyn_Tolmachov" class="not-found">Kostiantyn Tolmachov</a></td>
+							<td><a href="page_not_found.html?title=Kostiantyn_Tolmachov" class="not-found internal-link">Kostiantyn Tolmachov</a></td>
 							<td>85</td>
 							<td></td>
 						</tr>
@@ -769,7 +774,7 @@
 						</tr>
 					</table>
 				</div>
-				<div class="figure-container figure-center" style="width:50%;">
+				<div class="figure-container figure-center container-background container-border" style="width:50%;">
 					<a href="nathan_grad.jpg"><img src="nathan_grad.jpg" alt="A picture of a graduated Nathan." class="figure-image"></a>
 					<figcaption class="figure-caption">Gurrin-Smith after graduating.</figcaption>
 				</div>
@@ -787,7 +792,7 @@
 					After finishing school, Gurrin-Smith took a <a href="https://en.wikipedia.org/wiki/Gap_year">gap year</a>. At the start of this year. He researched mathematics in the Fields Undergraduate Summer Research Program at the <a href="https://en.wikipedia.org/wiki/Fields_Institute">Fields Institute</a>. There, he worked with Professor Maurizio De Pitta, graduate student Giulio, and two other undergraduates: Bhavya and Faisal, to <a href="https://en.wikipedia.org/wiki/Mathematical_model">model</a> <a href="https://en.wikipedia.org/wiki/Calcium">calcium</a> <a href="https://en.wikipedia.org/wiki/Diffusion">diffusion</a> in <a href="https://en.wikipedia.org/wiki/Astrocyte">astrocytes</a>. After this, he further explored his rock climbing interest and picked up a job selling climbing gear at Mountain Equipment Company, where he currently still works.
 				</p>
 
-				<div class="figure-container figure-center" style="width:70%;">
+				<div class="figure-container figure-center container-background container-border" style="width:70%;">
 					<a href="work_timeline.png"><img src="work_timeline.png" alt="A timeline of Gurrin-Smith's career" class="figure-image"></a>
 					<figcaption class="figure-caption">A timeline of Gurrin-Smith's career.</figcaption>
 				</div>
@@ -801,7 +806,7 @@
 				<p>Gurrin-Smith is friends with the following people.<sup>[<a href="#source-fake-interview">tbd</a>]</sup></p>
 
 				<h3 id="hobbies" class="heading">Hobbies</h3>
-				<div class="figure-container figure-right" style="width:25%;">
+				<div class="figure-container figure-right container-background container-border" style="width:25%;">
 					<a href="shaving_stand.jpg"><img src="shaving_stand.jpg" alt="A homemade shaving stand." class="figure-image"></a>
 					<figcaption class="figure-caption">A shaving stand.</figcaption>
 				</div>
@@ -817,7 +822,7 @@
 				<p>
 					Every so often, he likes to DM DnD games for some of his friends (albeit, poorly).
 				</p>
-				<div class="figure-container figure-right" style="width:15%;">
+				<div class="figure-container figure-right container-background container-border" style="width:15%;">
 					<a href="soap_holder.jpg"><img src="soap_holder.jpg" alt="A homemade soap holder." class="figure-image"></a>
 					<figcaption class="figure-caption">A soap holder.</figcaption>
 				</div>
@@ -833,7 +838,7 @@
 				</p>
 
 				<h3 id="athletics" class="heading">Athletics</h3>
-				<div class="figure-container figure-right" style="width:19%;">
+				<div class="figure-container figure-right container-background container-border" style="width:19%;">
 					<a href="nathan_hs_run.png"><img src="nathan_hs_run.png" alt="A picture of a running Nathan." class="figure-image"></a>
 					<figcaption class="figure-caption">Gurrin-Smith running in high school.</figcaption>
 				</div>
@@ -856,14 +861,14 @@
 							<th colspan="5">2013</th>
 						</tr>
 						<tr>
-							<td><a href="page_not_found.html?title=McQuaid_Invitational" class="not-found">McQuaid Invitational</a></td>
+							<td><a href="page_not_found.html?title=McQuaid_Invitational" class="not-found internal-link">McQuaid Invitational</a></td>
 							<td><a href="https://en.wikipedia.org/wiki/Rochester,_New_York">Rochester</a>, <a href="https://en.wikipedia.org/wiki/New_York_(state)">New York</a></td>
 							<td>6th<sup>[<a id="cite-rochester-2013" href="#source-rochester-2013">tbd</a>]</sup></td>
 							<td>&lt;2 mile XC Run</td>
 							<td>9:01.9</td>
 						</tr>
 						<tr>
-							<td><a href="page_not_found.html?title=TDCAA_Cross_Country_Championships" class="not-found">TDCAA XC Championships</a></td>
+							<td><a href="page_not_found.html?title=TDCAA_Cross_Country_Championships" class="not-found internal-link">TDCAA XC Championships</a></td>
 							<td><a href="https://en.wikipedia.org/wiki/Etobicoke">Etobicoke, Ontario</a></td>
 							<td>4th<sup>[<a id="cite-tdcaa-xc-2013-a" href="#source-tdcaa-xc-2013">tbd</a>]</sup></td>
 							<td>5200m XC Run</td>
@@ -880,7 +885,7 @@
 							<th colspan="5">2014</th>
 						</tr>
 						<tr>
-							<td><a href="page_not_found.html?title=TDCAA_Track_And_Field_Championships" class="not-found">TDCAA T&F Championships</a></td>
+							<td><a href="page_not_found.html?title=TDCAA_Track_And_Field_Championships" class="not-found internal-link">TDCAA T&F Championships</a></td>
 							<td>Etobicoke, Ontario</td>
 							<td>2nd<sup>[<a id="cite-tdcaa-tnf-2014-1500" href="#source-tdcaa-tnf-2014-1500">tbd</a>]</sup></td>
 							<td>1500m Track Run</td>
@@ -894,7 +899,7 @@
 							<td>9:53.69</td>
 						</tr>
 						<tr>
-							<td><a href="page_not_found.html?title=Metro_Track_And_Field_Championships" class="not-found">Metro T&F Championships</a></td>
+							<td><a href="page_not_found.html?title=Metro_Track_And_Field_Championships" class="not-found internal-link">Metro T&F Championships</a></td>
 							<td><a href="https://en.wikipedia.org/wiki/Scarborough,_Ontario">Scarborough, Ontario</a></td>
 							<td>3rd<sup>[<a id="cite-metro-2014-1500" href="#source-tdcaa-metro-2014-1500">tbd</a>]</sup></td>
 							<td>1500m Track Run</td>
@@ -915,7 +920,7 @@
 							<td>4:42.59</td>
 						</tr>
 						<tr>
-							<td><a href="page_not_found.html?title=Triathlon_Ontario_Youth_Cup" class="not-found">Triathlon Ontario Youth Cup</a></td>
+							<td><a href="page_not_found.html?title=Triathlon_Ontario_Youth_Cup" class="not-found internal-link">Triathlon Ontario Youth Cup</a></td>
 							<td>Varying in Ontario</td>
 							<td>3rd<sup>[<a id="cite-tri-youth-cup" href="#source-tri-youth-cup">tbd</a>]</sup></td>
 							<td>Triathlon</td>
@@ -1002,7 +1007,7 @@
 							<td>Team placed 14th<sup>[<a id="cite-ofsaa-xc-2015-b" href="#source-ofsaa-xc-2015">tbd</a>]</sup></td>
 						</tr>
 						<tr>
-							<td><a href="page_not_found.html?title=Tannenbaum_10K" class="not-found">Tannenbaum 10K</a></td>
+							<td><a href="page_not_found.html?title=Tannenbaum_10K" class="not-found internal-link">Tannenbaum 10K</a></td>
 							<td>Toronto, Ontario</td>
 							<td>13<sup>[<a id="cite-tannenbaum-a" href="#source-tannenbaum">tbd</a>]</sup></td>
 							<td>10000m Outdoors</td>
@@ -1026,7 +1031,7 @@
 							<td>9:54.20</td>
 						</tr>
 						<tr>
-							<td><a href="page_not_found.html?title=Beaches_Jazz_Run" class="not-found">Beaches Jazz Run</a></td>
+							<td><a href="page_not_found.html?title=Beaches_Jazz_Run" class="not-found internal-link">Beaches Jazz Run</a></td>
 							<td>Toronto, Ontario</td>
 							<td>2nd<sup>[<a id="cite-jazz-run-b" href="#source-jazz-run">tbd</a>]</sup></td>
 							<td>5000m Outdoors</td>
@@ -1098,7 +1103,7 @@
 							<td>800m Track</td>
 							<td>2:08.64<sup id="cite-redmond-2016-800">[<a href="#source-redmond-2016-800">tbd</a>]</sup></td>
 							<td>7 May 2016</td>
-							<td><a href="page_not_found.html?title=Father_Redmond_Track_And_Field_Classic" class="not-found">Father Redmond T&F Classic</a></td>
+							<td><a href="page_not_found.html?title=Father_Redmond_Track_And_Field_Classic" class="not-found internal-link">Father Redmond T&F Classic</a></td>
 						</tr>
 						<tr>
 							<td>1500m Track</td>
@@ -1132,25 +1137,25 @@
 							<td>50m freestyle LC</td>
 							<td>30.26</td>
 							<td>16 June 2013</td>
-							<td><a href="page_not_found.html?title=Central_Region_Long_Course_Championships" class="not-found">Central Region Long Course Championships</a></td>
+							<td><a href="page_not_found.html?title=Central_Region_Long_Course_Championships" class="not-found internal-link">Central Region Long Course Championships</a></td>
 						</tr>
 						<tr>
 							<td>50m freestyle SC</td>
 							<td>29.12</td>
 							<td>3 March 2013</td>
-							<td><a href="page_not_found.html?title=Stingrays_Invitational_Meet" class="not-found">Stingrays Invitational Meet</a></td>
+							<td><a href="page_not_found.html?title=Stingrays_Invitational_Meet" class="not-found internal-link">Stingrays Invitational Meet</a></td>
 						</tr>
 						<tr>
 							<td>100m freestyle LC</td>
 							<td>1:06.11</td>
 							<td>14 April 2013</td>
-							<td><a href="page_not_found.html?title=John_Grootveld_Sr_Officials_Classic" class="not-found">John Grootveld Sr Officials Classic</a></td>
+							<td><a href="page_not_found.html?title=John_Grootveld_Sr_Officials_Classic" class="not-found internal-link">John Grootveld Sr Officials Classic</a></td>
 						</tr>
 						<tr>
 							<td>100m freestyle SC</td>
 							<td>1:04.64</td>
 							<td>30 November 2012</td>
-							<td><a href="page_not_found.html?title=Mega_City" class="not-found">Mega City</a></td>
+							<td><a href="page_not_found.html?title=Mega_City" class="not-found internal-link">Mega City</a></td>
 						</tr>
 						<tr>
 							<td>200m freestyle LC</td>
@@ -1174,7 +1179,7 @@
 							<td>400m freestyle SC</td>
 							<td>4:49.56</td>
 							<td>24 February 2013</td>
-							<td><a href="page_not_found.html?title=Ontario_Winter_Festival_II" class="not-found">Ontario Winter Festival II</a></td>
+							<td><a href="page_not_found.html?title=Ontario_Winter_Festival_II" class="not-found internal-link">Ontario Winter Festival II</a></td>
 						</tr>
 						<tr>
 							<td>800m freestyle LC</td>
@@ -1192,7 +1197,7 @@
 							<td>1500m freestyle SC</td>
 							<td>19:15.15</td>
 							<td>28 April 2013</td>
-							<td><a href="page_not_found.html?title=Pre-Req_And_Novice_Challenge_Cup" class="not-found">Pre-Req & Novice Challenge Cup</a></td>
+							<td><a href="page_not_found.html?title=Pre-Req_And_Novice_Challenge_Cup" class="not-found internal-link">Pre-Req & Novice Challenge Cup</a></td>
 						</tr>
 					</table>
 				</div>
@@ -1255,7 +1260,10 @@
 		</main>
 		<footer>
 			<hr class="separator">
-			<a href="index.html">Home</a>
+			<a class="internal-link" href="index.html">Home</a>
 		</footer>
+		<script>
+			updateInternalLinks();
+		</script>
 	</body>
 </html>

@@ -30,6 +30,11 @@ function addVarToLink(link, varName, varValue) {
     }
 }
 
+function deleteTheme(link) {
+    link = link.replace(RegExp("theme=[^&]*"), "");
+    return link.replace(RegExp("&$"), "");
+}
+
 function loadTheme() {
     var theme = getVar("theme");
     var cssInputLoc = document.getElementById("theme");
@@ -40,8 +45,9 @@ function loadTheme() {
     } else if (theme === "terminal") {
         cssInputLoc.href="css/terminal.css";
     } else {
+        var newLink = deleteTheme(location.href);
         cssInputLoc.href="css/classic.css";
-        location.replace(addVarToLink(location.href, "theme", "classic"))
+        location.replace(addVarToLink(newLink, "theme", "classic"))
     }
 }
 

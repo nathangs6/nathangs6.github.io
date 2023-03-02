@@ -35,18 +35,18 @@ function deleteTheme(link) {
     return link.replace(RegExp("&$"), "");
 }
 
-function loadTheme() {
+function loadTheme(path) {
     var theme = getVar("theme");
     var cssInputLoc = document.getElementById("theme");
     if (theme === "classic") {
-        cssInputLoc.href="css/classic.css";
+        cssInputLoc.href = path + "css/classic.css";
     } else if (theme === "future") {
-        cssInputLoc.href="css/future.css";
+        cssInputLoc.href = path + "css/future.css";
     } else if (theme === "terminal") {
-        cssInputLoc.href="css/terminal.css";
+        cssInputLoc.href = path + "css/terminal.css";
     } else {
         var newLink = deleteTheme(location.href);
-        cssInputLoc.href="css/classic.css";
+        cssInputLoc.href = path + "css/classic.css";
         location.replace(addVarToLink(newLink, "theme", "classic"))
     }
 }

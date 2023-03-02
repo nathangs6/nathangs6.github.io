@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Finance Tracker</title>
+		<!-- Setup Meta Data -->
+		<meta charset="utf-8">
+		<meta name="description" content="Finance Tracker">
+		<meta name="author" content="Nathan Gurrin-Smith">
+		<meta name="keywords" content="Nathan,Gurrin,Smith,Gurrin-Smith">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<!-- Include favicon -->
+		<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+		<!-- Include stylesheets -->
+		<link rel="stylesheet" type="text/css" href="../css/global.css">
+		<link id="theme" rel="stylesheet" type="text/css" href="../">
+		<script src="../js/funcs.js"></script>
+	</head>
+	<body>
+		<script>
+			loadTheme("../");
+		</script>
+		<header>
+			<h1 class="heading">Finance Tracker</h1>
+			<hr class="separator">
+			<p>Theme: <a href="financetracker.html?theme=classic">Classic</a> \\ <a href="financetracker.html?theme=future">Future</a> \\ <a href="financetracker.html?theme=terminal">Terminal</a></p>
+			<p><a href="../index.html" class="internal-link">Home</a></p>
+			<hr class="separator">
+		</header>
+
+		<main>
+			<p>Since budgeting is very important in our capitalistic society, and since I didn't want to pay for an app that did my budgeting, I decided to make my own finance tracker! Making my own has the benefit that it is free, and the downside that I have to input all of my expenses and earnings manually. To alleviate this downside, I implemented a few scripts that would help automate inputting those details. After making a simpler version that worked but had limited features, I decided to go all the way and make the one presented here. Some future features I would like to add include:</p>
+            <ul>
+                <li>Being able to "spend" savings. For example, once I go to graduate school I will need to spend money that I've put in the "Graduate School" savings fund.</li>
+            </ul>
+
+            <p>If you would like to use this tracker, please do the following:</p>
+            <ol>
+                <li>Create a copy of the Finance Tracker Template found <a href="https://drive.google.com/drive/folders/1293OEg3__-25N5TUysPuKwmaP7Xj-24c?usp=sharing">here</a>.</li>
+                <li>In the sheet, go to Extensions -&gt; Apps Script.</li>
+                <li>Go to the <a href="https://github.com/nathangs6/FinanceTracker">GitHub page</a>.</li>
+                <li>Copy the contents of <a href="https://github.com/nathangs6/FinanceTracker/blob/main/financeScripts.js">financeScript.js</a> into the .gs file in Apps Script.</li>
+                <li>Read the rest of this page to figure out how it works.</li>
+            </ol>
+            <h1 class="heading">How it Works</h1>
+            <hr class="separator">
+            <p>In the Finance Tracker workbook, there are several different sheets. The general purpose of each are as follows,</p>
+            <ol>
+                <li><a href="#home">Home</a>: contains frequently needed information and a way to add new information.</li>
+                <li><a href="#parameters">Parameters</a>: a sort-of "variable" list. It contains important information that is relatively static but can be changed due to individual circumstances.</li>
+                <li><a href="#expenses">Expenses</a>: contains a list of expenses.</li>
+                <li><a href="#income">Income</a>: contains a list of income sources and their "destination" (my word for what kind of use they will have).</li>
+                <li><a href="#analysis">Analysis</a>: contains information that is less frequently needed, but good to know.</li>
+                <li><a href="#historic-summary">Historic - Summary</a>: contains a summary of old data.</li>
+                <li><a href="#historic-expenses">Historic - Expenses</a>: archived data for previous years' expenses.</li>
+                <li><a href="#historic-income">Historic - Income</a>: archived data for previous years' income.</li>
+            </ol>
+            <h2 id="home" class="heading">Home</h2>
+            <p>The home sheet consists of four different sections.</p>
+            <ol>
+                <li>Quick Info: the quick info section contains some information that I like to have quick access to. For me, that is how much spendable money I have and how much I've spent in the last month. If you would like to add more information here by adding columns, make sure you change "expenseRow" and "incomeRow" in globalConstants()  in financeScripts.gs accordingly.</li>
+                <li>Add Expense: the add expense section is how you add new expenses. Just fill in each column and click the add expense button. This row is the "expenseRow" in globalConstants().</li>
+                <li>Add Income: the add income section is how you add new expenses. Just fill in each column and click the add income button. This row is the "incomeRow" in globalConstants().</li>
+                <ul>
+                    <li>If you choose profile "Custom", you need to fill in column "Destination", which needs to be a comma-separated list of the form "Destination1,Percentage1,Destination2,Percentage2", etc., where the percentages add up to 100%.</li>
+                    <li>If you choose a pre-built profile, leave "Destination" blank.</li>
+                </ul>
+                <li>Parameters: the parameters section is a reminder of what categories, subcategories, and saving profiles you have (something I frequently forgot in the last iteration). There is no functional purpose of this section, it is purely for reminding me of the options.</li>
+            </ol>
+            <p>If you want to change the columns of the "Add X" sections, please read the code or email me :)</p>
+            
+            <h2 id="parameters" class="heading">Parameters</h2>
+            <p>The parameters sheet consists of three different sections.</p>
+            <ol>
+                <li>Update Category: the update category section lets you change an expense categories name. For example, if I had the category "Hobby" and I wanted to change it to "Hobbies", I can just input it here instead of manually going through the data sheet.</li>
+                <li>Update Subcategory: same as update category, but for subcategories. Here, you can both change the name of the subcategory and change what category it is categorized under.</li>
+                <li>Parameters: this is where all of the variables for this tracker are stored. Note that the Savings Profile location is used by the scripts, so if you want to change its location you have to make the corresponding change in the script getDestinationList(profile) in financeScripts.gs.</li>
+            </ol>
+
+            <h2 id="expenses" class="heading">Expenses</h2>
+            <p>The expenses sheet is a simple list of expenses. The ordering of the columns is important, you may have to make a large amount of changes if you want to re-order them.</p>
+
+            <h2 id="income" class="heading">Income</h2>
+            <p>The income sheet is a simple list of income sources. The ordering of the columns is important, you may have to make a large amount of changes if you want to re-order them.</p>
+
+            <h2 id="analysis" class="heading">Analysis</h2>
+            <p>The analysis sheet contains a more detailed breakdown of the data. Almost everything here can be changed easily, but here is what I chose.</p>
+            <ul>
+                <li>Savings section: gives a quick breakdown of how much money I have saved for each purpose.</li>
+                <li>MMT spending breakdown: lists out the moving-month-total of each subcategory.</li>
+                <li>Food pie chart: a breakdown of how much money I've spent on food in different subcategories in the last month, which is used to ensure I don't spend too much money on restaurants.</li>
+                <li>Hobby bar chart: a breakdown of how much money I've spent on my hobbies in the last month, which is used to ensure I don't spend too much on them :)</li>
+            </ul>
+
+            <h2 id="historic-summary" class="heading">Historic - Summary</h2>
+            <p>Contains a simple summary of historic data. Essentially, it summarizes each previous year's expenses and savings so that they can be used in the analysis sheet.</p>
+
+            <h2 id="historic-expenses" class="heading">Historic - Expenses</h2>
+            <p>Like the expenses sheet, but for all previous years' data.</p>
+
+            <h2 id="historic-income" class="heading">Historic - Income</h2>
+            <p>LIke the income sheet, but for all previous years' data.</p>
+		</main>
+		<footer>
+			<hr class="separator">
+			<a class="internal-link" href="../index.html">Home</a>
+		</footer>
+		<script>
+			updateInternalLinks();
+		</script>
+	</body>
+</html>

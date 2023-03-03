@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Tricks</title>
+		<!-- Setup Meta Data -->
+		<meta charset="utf-8">
+		<meta name="description" content="Finance Tracker">
+		<meta name="author" content="Nathan Gurrin-Smith">
+		<meta name="keywords" content="Nathan,Gurrin,Smith,Gurrin-Smith">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<!-- Include favicon -->
+		<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+		<!-- Include stylesheets -->
+		<link rel="stylesheet" type="text/css" href="../css/global.css">
+		<link id="theme" rel="stylesheet" type="text/css" href="../">
+		<script src="../js/funcs.js"></script>
+	</head>
+	<body>
+		<script>
+			loadTheme("../");
+		</script>
+		<header>
+			<h1 class="heading">Tricks</h1>
+			<hr class="separator">
+			<p>Theme: <a href="tricks.html?theme=classic">Classic</a> \\ <a href="tricks.html?theme=future">Future</a> \\ <a href="tricks.html?theme=terminal">Terminal</a></p>
+			<p><a href="../index.html" class="internal-link">Home</a></p>
+			<hr class="separator">
+		</header>
+
+		<main>
+			<p>There are many facts and tricks that I have come across that I frequently forget. This page tried to remedy that and hopefully help others :)</p>
+            <div class="nav-div container-background container-border">
+				<h6 style="margin: 0; text-align: center; font-size: small;">Contents [<input class="link-button" id="nav-div-button" type="button" value="hide" onclick='collapse("nav-div","nav-div-button", "hide", "show")'>]</h6>
+				<div id="nav-div" style="display:block;">
+					<ul style="margin:0.4em;margin-left:0;">
+						<li><a href="#git-and-github">Git and GitHub</a></li>
+                        <ul>
+                            <li><a href="#github-force-pages-build">Force GithHub pages build</a></li>
+                        </ul>
+                        <li><a href="#latex">LaTeX</a></li>
+                        <li><a href="#tikz">Tikz</a></li>
+                        <li><a href="#html-and-css">HTML and CSS</a></li>
+                        <ul>
+                            <li><a href="#html-and-css-favicon">Fun tab icons</a></li>
+                            <li><a href="#html-and-css-mobile-friendly">Making your site mobile-friendly</a></li>
+                        </ul>
+                        <li><a href="#google-apps-script">Google Apps Script</a></li>
+                        <li><a href="#uoft-website">UofT Website</a></li>
+					</ul>
+				</div>
+			</div>
+
+            <h2 id="git-and-github" class="heading">Git and GitHub</h2>
+            <hr class="separator">
+            Here are some tricks pertaining to <a href="https://en.wikipedia.org/wiki/Git">Git</a> and <a href="https://en.wikipedia.org/wiki/GitHub">GitHub</a>.
+            <h3 id="github-force-pages-build" class="heading">Force GitHub Pages Build</h3>
+            <p>Once upon a time I tried to update my GitHub Pages website (this one) by pushing a commit. Unfortunately, it did not succeed! I got an email stating my "pages build and deployment" had failed. It turned out that <a href="https://docs.github.com/en/actions">GitHub Actions</a> had failed. Unsure what to do, I looked around a little for a solution. Many of them either recommended pushing an empty commit, or setting up some fancy yml script for Actions. Seeing as how my webpage is very simple, and that I didn't want to clutter my commit history with empty rebuild requests, I decided to use the following solution:</p>
+            <ol>
+                <li>Download <a href="https://cli.github.com/">GitHub CLI</a>.</li>
+                <li>In the Command Prompt (or terminal if you're using Mac or Linux), run the following command</li>
+                    <code class="container-background container-border">gh api --method POST /repos/OWNER/REPO/pages/builds</code>
+                    <p>where,</p>
+                    <ul>
+                        <li>REPO: the name of the repository you want to rebuild (nathangs6.github.io for me)</li>
+                        <li>OWNER: the owner of the repository you want to rebuild (nathangs6 for me)</li>
+                    </ul>
+            </ol>
+            <p>Source: <a href="https://stackoverflow.com/questions/24098792/how-to-force-github-pages-build#answer-53824539">this answer</a> by <a href="https://stackoverflow.com/users/4624996/bennett-blodinger">Bennet Blodinger</a>.</p>
+
+            <h2 id="latex" class="heading">LaTeX</h2>
+            <hr class="separator">
+
+            <h2 id="tikz" class="heading">TikZ</h2>
+            <hr class="separator">
+
+            <h2 id="html-and-css" class="heading">HTML and CSS</h2>
+            <hr class="separator">
+            <p>Here are some tricks regarding HTML and CSS.</p>
+            <h3 id="html-and-css-favicon" class="heading">Fun Tab Icons</h3>
+            <p>If you are on a computer, look up at the tab you are currently on. You should see <img src="../images/favicon.ico" style="max-height: 1em;">. If you want something similar, here is how you can do so:</p>
+            <ol>
+                <li>Find the image you want, and save it as "favicon.io" somewhere in your repository.</li>
+                <li>In the head element of your .html page, add</li>
+                <code class="container-background container-border">&lt;link rel="icon" type="image/x-icon" href="link/to/favicon.ico"&gt;</code>
+            </ol>
+            Refresh your page and you should be able to see it!
+
+            <h3 id="html-and-css-mobile-friendly" class="heading">Making Your Site Mobile-Friendly</h3>
+            <p>Making your website mobile-friendly is pretty easy. First, in your head element, add the following line:</p>
+            <code class="container-background container-border">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
+            <p>Then, in the relevant CSS file, add the following:</p>
+            <div class="container-background container-border">
+                <code>
+                    @media all and (max-width: dimension) {<br>
+                        &emsp;&emsp;identifier {<br>
+                        &emsp;&emsp;&emsp;&emsp;styling<br>
+                        &emsp;&emsp;}<br>
+                    }
+                </code>
+            </div>
+            <p>If you would like to go from mobile-friendly to computer-friendly, simply replace <code>max-width: dimension</code> to <code>min-width: dimension</code>. You can chain these one after another to be adaptable to many screen sizes, but remember that the later styling will overwrite the earlier ones!</p>
+
+            <h2 id="google-apps-script" class="heading">Google Apps Script</h2>
+            <hr class="separator">
+            <p>Here are some tricks I've come across when using Google Apps Script (which is so much better than Excel VBA wow)</p>
+            <h3 id="google-apps-script-global-constants" class="heading">Global Constants</h3>
+            <p>To simplify my code, I usually like to use global constants. Doing so was particularly useful for my <a class="internal-link" href="financetracker.html">finance tracker</a>. Unfortunately, in Google Apps Script, this isn't really possible like it is in Python (for example). I stumbled across a StackOverflow answer that provided a simple enough solution for my purposes. Essentially, you can just make a "constants function" which, when called, gives you all your global constants. For example, it could look like this:</p>
+            <div class="container-background container-border">
+                <code>
+                    function globalConstants() {<br>
+                        &emsp;&emsp;var constants = {<br>
+                            &emsp;&emsp;&emsp;&emsp;x: 10<br>
+                        &emsp;&emsp;};<br>
+                        &emsp;&emsp;return constants<br>
+                    }
+                </code>
+            </div>
+            <p>Then, when you want to use it, you can just do:</p>
+            <div class="container-background container-border">
+                <code>
+                    gc = globalConstants();<br>
+                    y = 1 + gc.x;
+                </code>
+            </div>
+            <p>Source: <a href="https://stackoverflow.com/questions/24721226/how-to-define-global-variable-in-google-apps-script#answer-42536794">this answer</a> by <a href="https://stackoverflow.com/users/7642490/krzfra">KrzFra</a> and edited by <a href="https://stackoverflow.com/users/380607/magne">Magne</a>.</p>
+
+            <h2 id="uoft-website" class="heading">UofT Website</h2>
+            <hr class="separator">
+            <p>If you are a student at UofT, you can host your own static webpage through them! It functions exactly like a GitHub Pages site does. Here is how that is done:</p>
+            <ol>
+                <li>Go <a href="http://sites.utoronto.ca/ns/utorweb/">here</a> and read the FAQ and conditions and use.</li>
+                <li>To request the web space you'll be sent to <a href="https://www.utorid.utoronto.ca/">this website</a>. Go to "Get Information" -&gt; <a href="https://www.utorid.utoronto.ca/cgi-bin/utorid/info.pl">get information</a>.</li>
+                <li>Login, go to make changes, and click on "individual web space".</li>
+                <li>There should be a subsection on that page for "Individual Web Space" where you can request web space.</li>
+                <li>Within a day you should have a website ready for use!</li>
+            </ol>
+		</main>
+		<footer>
+			<hr class="separator">
+			<a class="internal-link" href="../index.html">Home</a>
+		</footer>
+		<script>
+			updateInternalLinks();
+		</script>
+	</body>
+</html>

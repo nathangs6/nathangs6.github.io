@@ -41,7 +41,7 @@
                 <li>Copy the contents of <a href="https://github.com/nathangs6/FinanceTracker/blob/main/financeScripts.js">financeScript.js</a> into the .gs file in Apps Script.</li>
                 <li>Read the rest of this page to figure out how it works.</li>
             </ol>
-            <h1 class="heading">How it Works</h1>
+            <h2 class="heading">How it Works</h2>
             <hr class="separator">
             <p>In the Finance Tracker workbook, there are several different sheets. The general purpose of each are as follows,</p>
             <ol>
@@ -54,7 +54,7 @@
                 <li><a href="#historic-expenses">Historic - Expenses</a>: archived data for previous years' expenses.</li>
                 <li><a href="#historic-income">Historic - Income</a>: archived data for previous years' income.</li>
             </ol>
-            <h2 id="home" class="heading">Home</h2>
+            <h3 id="home" class="heading">Home</h3>
             <p>The home sheet consists of four different sections.</p>
             <ol>
                 <li>Quick Info: the quick info section contains some information that I like to have quick access to. For me, that is how much spendable money I have and how much I've spent in the last month. If you would like to add more information here by adding columns, make sure you change "expenseRow" and "incomeRow" in globalConstants()  in financeScripts.gs accordingly.</li>
@@ -68,7 +68,7 @@
             </ol>
             <p>If you want to change the columns of the "Add X" sections, please read the code or email me :)</p>
             
-            <h2 id="parameters" class="heading">Parameters</h2>
+            <h3 id="parameters" class="heading">Parameters</h3>
             <p>The parameters sheet consists of three different sections.</p>
             <ol>
                 <li>Update Category: the update category section lets you change an expense categories name. For example, if I had the category "Hobby" and I wanted to change it to "Hobbies", I can just input it here instead of manually going through the data sheet.</li>
@@ -76,13 +76,13 @@
                 <li>Parameters: this is where all of the variables for this tracker are stored. Note that the Savings Profile location is used by the scripts, so if you want to change its location you have to make the corresponding change in the script getDestinationList(profile) in financeScripts.gs.</li>
             </ol>
 
-            <h2 id="expenses" class="heading">Expenses</h2>
+            <h3 id="expenses" class="heading">Expenses</h3>
             <p>The expenses sheet is a simple list of expenses. The ordering of the columns is important, you may have to make a large amount of changes if you want to re-order them.</p>
 
-            <h2 id="income" class="heading">Income</h2>
+            <h3 id="income" class="heading">Income</h3>
             <p>The income sheet is a simple list of income sources. The ordering of the columns is important, you may have to make a large amount of changes if you want to re-order them.</p>
 
-            <h2 id="analysis" class="heading">Analysis</h2>
+            <h3 id="analysis" class="heading">Analysis</h3>
             <p>The analysis sheet contains a more detailed breakdown of the data. Almost everything here can be changed easily, but here is what I chose.</p>
             <ul>
                 <li>Savings section: gives a quick breakdown of how much money I have saved for each purpose.</li>
@@ -91,13 +91,13 @@
                 <li>Hobby bar chart: a breakdown of how much money I've spent on my hobbies in the last month, which is used to ensure I don't spend too much on them :)</li>
             </ul>
 
-            <h2 id="historic-summary" class="heading">Historic - Summary</h2>
+            <h3 id="historic-summary" class="heading">Historic - Summary</h3>
             <p>Contains a simple summary of historic data. Essentially, it summarizes each previous year's expenses and savings so that they can be used in the analysis sheet.</p>
 
-            <h2 id="historic-expenses" class="heading">Historic - Expenses</h2>
+            <h3 id="historic-expenses" class="heading">Historic - Expenses</h3>
             <p>Like the expenses sheet, but for all previous years' data.</p>
 
-            <h2 id="historic-income" class="heading">Historic - Income</h2>
+            <h3 id="historic-income" class="heading">Historic - Income</h3>
             <p>LIke the income sheet, but for all previous years' data.</p>
 		</main>
 		<footer>

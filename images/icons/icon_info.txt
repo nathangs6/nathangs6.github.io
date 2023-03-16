@@ -1,0 +1,38 @@
+### House ###
+Left Roof Bar:
+    (x,y,w,h,r) = (0,0,15,100,45)
+Right Roof Bar:
+    (x,y,w,h,r) = (60.104,0,15,100,-45)
+Left Wall:
+    (x,y,w,h,r) = (22,48.710,15,90,0)
+Right Wall:
+    (x,y,w,h,r) = (104.421,48.710,15,90,0)
+Floor: 
+    (x,y,w,h,r) = (22,123.710,97.421,15,90)
+Door:
+    (x,y,w,h,r) = (55.710,78.710,30,60,0);
+Radius: 25
+
+### Archive ###
+Lid Top:
+    (x,y,w,h,r) = (0,0,200,15,0)
+Lid Bottom:
+    (x,y,w,h,r) = (0,45,200,15,0)
+Lid Left Side:
+    (x,y,w,h,r) = (0,0,15,60,0)
+Lid Right Side:
+    (x,y,w,h,r) = (185,0,15,60,0)
+Base Left Side:
+    (x,y,w,h,r) = (15,45,15,155,0)
+Base Right Side:
+    (x,y,w,h,r) = (170,45,15,155,0)
+Base Bottom:
+    (x,y,w,h,r) = (15,185,170,15,0)
+Handle Top:
+    (x,y,w,h,r) = (60,75,80,15,0)
+Handle Bottom:
+    (x,y,w,h,r) = (60,105,80,15,0)
+Handle Left Side:
+    (x,y,w,h,r) = (60,75,15,45,0)
+Handle Right Side:
+    (x,y,w,h,r) = (125,75,15,45,0)

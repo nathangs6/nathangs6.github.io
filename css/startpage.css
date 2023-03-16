@@ -1,0 +1,183 @@
+:root {
+    /*--background: #121212;
+    --foreground: #212122;
+    --shadow: #010101;
+    --text: #ffd5cd;*/
+    --background: #272e33;
+    --foreground: #374145;
+    --shadow: #1e2326;
+    --text: #d3c6aa;
+    --highlight-one: #a7c080;
+    --highlight-two: #d699b6;
+    --highlight-three: #83c092;
+    --highlight-four: #7fbbb3;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    background: var(--background);
+}
+
+body {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: var(--background);
+    color: var(--text);
+}
+
+/* Page Layout */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image-box {
+    width: 21em;
+}
+
+.navigation-box {
+    width: 49em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    width: 46em;
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+}
+
+.engine {
+    width: 3em;
+    margin-left: 0.5em
+}
+
+.search {
+    width: 41.5em;
+    margin: auto;
+}
+
+.search-form {
+    width: 100%;
+}
+
+.input_box {
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+.quick-links {
+    width: 49em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 1em;
+}
+
+.category {
+    min-width: 9em;
+    height: 14em;
+}
+
+.icon {
+    display: block;
+    height: 3.5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+.bookmarks {
+    margin-top: 0.5em;
+    height: 8.5em;
+}
+
+
+
+/*### Block Styling ###*/
+/* Main Container Styling */
+.container {
+}
+/* Image Styling */
+.main-image {
+    width: 100%;
+    border-radius: 5%;
+}
+
+/* Navigation Box Styling */
+
+/* Search Bar Styling */
+.search-bar {
+    background: var(--foreground);
+    box-shadow: 0px 4px 5px var(--shadow);
+    border-radius: 5%;
+}
+
+.input_box {
+    outline: none;
+    background: none;
+    border: none;
+    text-align: center;
+    font-size: 22px;
+    color: var(--text);
+}
+
+.engine {
+    background: none;
+}
+
+/* Link Box Styling */
+.bookmarks { 
+    background: var(--foreground);
+    box-shadow: 0px 4px 5px var(--shadow);
+    text-align: left;
+    font-size: 18px;
+    border-radius: 5%;
+}
+
+ul {
+    padding: 0;
+    margin-left: 1em;
+    margin-top: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+a:visited {
+    color: var(--text);
+}
+
+/* Specific Category Styling */
+#category-one a:hover {
+    color: var(--highlight-one);
+}
+
+#category-two a:hover {
+    color: var(--highlight-two);
+}
+
+#category-three a:hover {
+    color: var(--highlight-three);
+}
+
+#category-four a:hover {
+    color: var(--highlight-four);
+}

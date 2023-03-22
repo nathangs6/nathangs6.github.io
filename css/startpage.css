@@ -1,10 +1,6 @@
 :root {
-    /*--background: #121212;
-    --foreground: #212122;
-    --shadow: #010101;
-    --text: #ffd5cd;*/
-    --background: #272e33;
-    --foreground: #374145;
+    --background: #2D353B;
+    --foreground: #3D484D;
     --shadow: #1e2326;
     --text: #d3c6aa;
     --highlight-one: #a7c080;
@@ -13,10 +9,10 @@
     --highlight-four: #7fbbb3;
 }
 
-html{
+/* Page Layout */
+html {
     height: 100%;
     width: 100%;
-    background: var(--background);
 }
 
 body {
@@ -26,11 +22,8 @@ body {
     align-items: center;
     height: 100%;
     width: 100%;
-    background: var(--background);
-    color: var(--text);
 }
 
-/* Page Layout */
 .container {
     display: flex;
     justify-content: center;
@@ -106,9 +99,16 @@ body {
 
 
 /*### Block Styling ###*/
-/* Main Container Styling */
-.container {
+/* General Page Styling */
+html {
+    background: var(--background);
 }
+
+body {
+    background: var(--background);
+    color: var(--text);
+}
+
 /* Image Styling */
 .main-image {
     width: 100%;

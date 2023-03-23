@@ -44,6 +44,8 @@ function loadTheme(path) {
         cssInputLoc.href = path + "css/future.css";
     } else if (theme === "terminal") {
         cssInputLoc.href = path + "css/terminal.css";
+    } else if (theme === "everforest") {
+        cssInputLoc.href = path + "css/everforest.css";
     } else {
         var newLink = deleteTheme(location.href);
         cssInputLoc.href = path + "css/classic.css";

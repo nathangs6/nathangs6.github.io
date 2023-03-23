@@ -3,6 +3,7 @@ function loadPageNotFound() {
 	document.getElementById("classic-link").href = "page_not_found.html?title=" + data + "&theme=classic";
 	document.getElementById("future-link").href = "page_not_found.html?title=" + data + "&theme=future";
 	document.getElementById("terminal-link").href = "page_not_found.html?title=" + data + "&theme=terminal";
+	document.getElementById("everforest-link").href="page_not_found.html?title=" + data + "&theme=everforest";
 
 	data = data.replaceAll('_',' ');
 	var vars = document.getElementsByClassName("to-replace")

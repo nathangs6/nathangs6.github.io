@@ -1,0 +1,60 @@
+/* Colour file for gruvbox theme */
+/* Colours:
+Text: #EBDBB2
+Background: #282828
+Container Background: #504945
+Borders: #928374
+Known links: #83A598
+Page not found links: #D3869B
+*/
+
+a {
+    color: #83A598;
+}
+
+.not-found {
+    color: #D3869B;
+}
+
+.link-button {
+    color: #83A598;
+}
+
+.container-background {
+    background-color: #504945;
+}
+
+.container-border {
+    border: 1px solid #928374;
+}
+
+.divided-table {
+    border: 1px solid #928374;
+}
+
+.divided-table tr {
+    border: 1px solid #928374;
+}
+
+.divided-table th {
+    border: 1px solid #928374;
+}
+
+.divided-table td {
+    border: 1px solid #928374;
+}
+
+.separator {
+    color: #928374;
+    background-color: #928374;
+}
+
+.on-page {
+    color: #EBDBB2;
+}
+
+html {
+    color: #EBDBB2;
+    background-color: #282828;
+    font-family: Arial, Helvetica, sans-serif;
+}

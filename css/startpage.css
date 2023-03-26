@@ -1,12 +1,12 @@
 :root {
-    --background: #2D353B;
-    --foreground: #3D484D;
-    --shadow: #1e2326;
-    --text: #d3c6aa;
-    --highlight-one: #a7c080;
-    --highlight-two: #d699b6;
-    --highlight-three: #83c092;
-    --highlight-four: #7fbbb3;
+    --background: #282828;
+    --foreground: #504945;
+    --shadow: #1D2021;
+    --text: #EBDBB2;
+    --highlight-one: #b8bb26;
+    --highlight-two: #fabd2f;
+    --highlight-three: #83a598;
+    --highlight-four: #d3869b;
 }
 
 /* Page Layout */
